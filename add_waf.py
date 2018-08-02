@@ -12,14 +12,14 @@
 '''
 import paramiko
 
-hostname = '172.20.166.101'
+hostname = 'ip' #服务器IP地址
 port = 22
 web_path = r'/var/www/html/'
 waf_path = r'/tmp/log/waf.php'
 monitor_path = r'/tmp/log/M_64'
-ser_user = 'user620'
-ser_pass = '62073068'
-new_pass = 'cSair@2018--'
+ser_user = 'user'  #服务器账户
+ser_pass = 'PASS'  #服务器密码
+new_pass = 'NEWPASS'
 creat_logpath_cmd = "mkdir -p /tmp/log/ && chmod 777 -R /tmp/log/" 
 waf_and_monitor = 'chmod 777 -R /tmp/log/*'
 chg_pass = 'echo -e '+'"'+ser_pass+'\\n'+new_pass+'\\n'+new_pass+'"'+' | passwd'
